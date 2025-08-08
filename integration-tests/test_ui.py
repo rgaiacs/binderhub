@@ -44,12 +44,11 @@ async def local_hub_local_binder(request):
             resp = await async_requests.get(url)
             logger.debug("Debugging 1998. Status code is %s", resp.status_code)
             if resp.status_code == 200:
-                yield url
                 break
         except requests.exceptions.ConnectionError:
             pass
-        logger.debug("Debugging 1998. Sleeping for %s seconds", resp.status_code)
-        time.sleep(i)
+        time.sleep(1)
+    yield url
 
     proc.terminate()
     proc.wait()

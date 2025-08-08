@@ -47,7 +47,7 @@ async def local_hub_local_binder(request):
                 break
         except requests.exceptions.ConnectionError:
             pass
-        time.sleep(1)
+        time.sleep(i)
     yield url
 
     proc.terminate()

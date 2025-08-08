@@ -2,6 +2,7 @@
 Integration tests using playwright
 """
 
+import logging
 import subprocess
 import sys
 import time
@@ -13,6 +14,8 @@ from playwright.sync_api import Page
 
 from binderhub import __version__ as binder_version
 from binderhub.tests.utils import async_requests, random_port
+
+logger = logging.getLogger(__name__)
 
 
 @pytest.fixture(scope="module")
@@ -37,7 +40,9 @@ async def local_hub_local_binder(request):
     url = f"http://127.0.0.1:{port}/services/binder/"
     for i in range(10):
         try:
+            logger.debug("Debugging 1998. Making request #%s to %s", i, url)
             resp = await async_requests.get(url)
+            logger.debug("Debugging 1998. Status code is %s", resp.status_code)
             if resp.status_code == 200:
                 break
         except requests.exceptions.ConnectionError:

@@ -85,7 +85,7 @@ jobs:
 
       - name: Run playwright tests
         run: |
-          py.test --cov=binderhub -s integration-tests/
+          py.test --log-cli-level=DEBUG --cov=binderhub -s integration-tests/
 
       - uses: actions/upload-artifact@v4
         if: always()

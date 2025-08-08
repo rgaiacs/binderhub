@@ -42,7 +42,12 @@ async def local_hub_local_binder(request):
                 break
         except requests.exceptions.ConnectionError:
             pass
-        time.sleep(1)
+        # We use a increased linear time between requests
+        # because BinderHub server might require more than 10s to start.
+        time.sleep(i)
+    else:
+        print("BinderHub server is down! Tests will probably fail.")
+    # PyTest requires the yield instruction here!
     yield url
 
     proc.terminate()

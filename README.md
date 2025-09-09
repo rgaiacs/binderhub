@@ -4,8 +4,8 @@
 [![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/binderhub/test.yml?logo=github&label=tests)](https://github.com/jupyterhub/binderhub/actions)
 [![Latest chart development release](https://img.shields.io/badge/dynamic/json.svg?label=latest&url=https://jupyterhub.github.io/helm-chart/info.json&query=$.binderhub.latest&colorB=orange)](https://jupyterhub.github.io/helm-chart/)
 [![GitHub](https://img.shields.io/badge/issue_tracking-github-blue.svg)](https://github.com/jupyterhub/binderhub/issues)
-[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue.svg)](https://discourse.jupyter.org/c/binder/binderhub)
-[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue.svg)](https://gitter.im/jupyterhub/binder)
+[![Discourse](https://img.shields.io/badge/-forum-blue?logo=discourse&logoColor=white)](https://discourse.jupyter.org/c/binder/binderhub)
+[![Zulip](https://img.shields.io/badge/-social_chat-blue?logo=zulip&logoColor=white)](https://jupyter.zulipchat.com/)
 [![Contribute](https://img.shields.io/badge/I_want_to_contribute!-grey?logo=jupyter)](https://binderhub.readthedocs.io/en/latest/contribute.html)
 
 ## What is BinderHub?

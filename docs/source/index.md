@@ -1,7 +1,7 @@
 # BinderHub
 
-[![Join the chat at https://gitter.im/jupyterhub/binder](https://badges.gitter.im/jupyterhub/binder.svg)](https://gitter.im/jupyterhub/binder)
-[![Join our community Discourse page at https://discourse.jupyter.org](https://img.shields.io/badge/help_forum-discourse-blue.svg)](https://discourse.jupyter.org/c/binder/binderhub)
+[![Join our community Discourse page at https://discourse.jupyter.org](https://img.shields.io/badge/-forum-blue?logo=discourse&logoColor=white)](https://discourse.jupyter.org/c/binder/binderhub)
+[![Join the chat at https://jupyter.zulipchat.com/](https://img.shields.io/badge/-social_chat-blue?logo=zulip&logoColor=white)](https://jupyter.zulipchat.com/)
 
 BinderHub is a kubernetes-based cloud service that allows users to share reproducible interactive computing environments from code repositories. It is the primary technology behind [mybinder.org](https://mybinder.org).
 
